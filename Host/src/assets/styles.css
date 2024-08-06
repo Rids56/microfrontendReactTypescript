@@ -1,0 +1,34 @@
+.App {
+  font-family: sans-serif;
+  background-color: beige;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  text-align: center
+}
+
+.login {
+  display: grid;
+}
+
+button {
+  width: max-content;
+  margin: auto;
+  height: 30px;
+  background: aliceblue;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.navBar {
+  display: flex;
+  background: aliceblue;
+  width: auto;
+  padding: 20px;
+  justify-content: flex-start;
+  gap: 20px;
+}
