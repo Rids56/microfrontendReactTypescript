@@ -44,9 +44,9 @@ module.exports = (_, argv) => ({
   plugins: [
     new ModuleFederationPlugin({
       name: "Host",
-      filename: "remoteEntry.js",
-      remotes: {},
-      exposes: {},
+      remotes: {
+        microfrontend1: "microfrontend1@http://localhost:3001/remoteEntry.js",
+      },
       shared: {
         ...deps,
         react: {

@@ -1,15 +1,13 @@
-import React from 'react'
+import React, { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
+import ToDoList from './component/ToDoList'
 
 const App = () => (
-  <div className="container">
-    <div>Name: MFE1</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
+  <StrictMode>
+    <ToDoList />
+  </StrictMode>
 )
 const rootElement = document.getElementById('app')
 if (!rootElement) throw new Error('Failed to find the root element')
