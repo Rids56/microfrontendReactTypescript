@@ -48,9 +48,8 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "microfrontend1",
       filename: "remoteEntry.js",
-      remotes: {},
       exposes: {
-        "./app": "./src/App",
+        "./todo": "./src/component/ToDoList",
       },
       shared: {
         ...deps,
